@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enepen - Data & Tools for Social Systems</title>
+    <meta name="description" content="複雑な社会システムを、データとツールで紐解く。エネルギー、地震、金融などのインフラを可視化・シミュレーションします。">
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="enepen - Data & Tools for Social Systems">
+    <meta property="og:description" content="複雑な社会システムを、データとツールで紐解く。エネルギー、地震、金融などのインフラを可視化・シミュレーションします。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/ogp-image.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="enepen - Data & Tools for Social Systems">
+    <meta name="twitter:description" content="複雑な社会システムを、データとツールで紐解く">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div class="loader-overlay">
+        <div class="loader logo-text">enepen.</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <a href="/" class="logo">enepen.</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ambient Glow Effects -->
+    <div class="glow glow-top-left"></div>
+    <div class="glow glow-top-right"></div>
+    <div class="glow glow-bottom-left"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">複雑な社会システムを、<br>データとツールで紐解く。</h1>
+            <p class="hero-subtitle">
+                エネルギー、地震、金融。一見バラバラに見えるこれらの要素は、すべて私たちの生活の基盤であり、データによって可視化・シミュレーション可能なものです。<br>
+                enepenは、専門的な情報を誰もが触れる形に翻訳します。
+            </p>
+        </div>
+        <div class="card-stack">
+            <div class="stack-card card-1">
+                <span class="card-tag">Energy</span>
+                <div class="card-preview">
+                    <img src="assets/screenshot-nuclear-grid.png" alt="Nuclear Grid"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+            </div>
+            <div class="stack-card card-2">
+                <span class="card-tag">Finance</span>
+                <div class="card-preview">
+                    <img src="assets/screenshot-kodomo-nisa.png" alt="Finance"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+            </div>
+            <div class="stack-card card-3">
+                <span class="card-tag">Viz</span>
+                <div class="card-preview">
+                    <img src="assets/screenshot-seismic-jp.png" alt="Viz"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="projects">
+        <div class="work-header">
+            <h2 class="section-title">Projects.</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="energy">Energy</button>
+                <button class="filter-btn" data-filter="finance">Finance</button>
+                <button class="filter-btn" data-filter="viz">Viz</button>
+            </div>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1: Energy -->
+            <a href="projects/nuclear-grid-sim.html" class="project-card" data-category="energy">
+                <div class="project-image project-image-energy">
+                    <img src="assets/screenshot-nuclear-grid.png" alt="Nuclear Grid Simulator" class="project-thumb">
+                    <span class="project-tag">Energy</span>
+                </div>
+                <div class="project-info">
+                    <div class="meta-badges">
+                        <span class="meta-badge status-active"><span class="status-dot"></span>Tool</span>
+                        <span class="meta-badge">Active</span>
+                    </div>
+                    <h3 class="project-title">Nuclear Grid Simulator</h3>
+                    <p class="project-desc">原発・電力グリッドの運用シミュレーター</p>
+                </div>
+            </a>
+            <!-- Project 2: Finance -->
+            <a href="projects/kodomo-nisa.html" class="project-card" data-category="finance">
+                <div class="project-image project-image-finance">
+                    <span class="project-tag">Finance</span>
+                    <img src="assets/screenshot-kodomo-nisa.png" alt="Kodomo NISA Research" class="project-thumb">
+                </div>
+                <div class="project-info">
+                    <div class="meta-badges">
+                        <span class="meta-badge status-active"><span class="status-dot"></span>Media</span>
+                        <span class="meta-badge">Active</span>
+                    </div>
+                    <h3 class="project-title">こどもNISA研究所</h3>
+                    <p class="project-desc">新制度「こどもNISA」解説とシミュレーション</p>
+                </div>
+            </a>
+            <!-- Project 3: Viz -->
+            <a href="projects/seismic-jp.html" class="project-card" data-category="viz">
+                <div class="project-image project-image-viz">
+                    <span class="project-tag">Viz</span>
+                    <img src="assets/screenshot-seismic-jp.png" alt="Seismic JP" class="project-thumb">
+                </div>
+                <div class="project-info">
+                    <div class="meta-badges">
+                        <span class="meta-badge status-beta"><span class="status-dot"></span>Visual</span>
+                        <span class="meta-badge">Beta</span>
+                    </div>
+                    <h3 class="project-title">Seismic JP</h3>
+                    <p class="project-desc">地震活動の動的データビジュアライゼーション</p>
+                </div>
+            </a>
+            <!-- Project 4: Viz - SEISMIC WORLD -->
+            <a href="projects/seismic-world.html" class="project-card" data-category="viz">
+                <div class="project-image project-image-viz">
+                    <span class="project-tag">Viz</span>
+                    <img src="assets/screenshot-seismic-world.png" alt="SEISMIC WORLD" class="project-thumb">
+                </div>
+                <div class="project-info">
+                    <div class="meta-badges">
+                        <span class="meta-badge status-active"><span class="status-dot"></span>Visual</span>
+                        <span class="meta-badge">Active</span>
+                    </div>
+                    <h3 class="project-title">SEISMIC WORLD</h3>
+                    <p class="project-desc">世界の地震データを3色の光と音で可視化</p>
+                </div>
+            </a>
+            <!-- Project 4: Finance - Index Tracker -->
+            <a href="projects/index-tracker.html" class="project-card" data-category="finance">
+                <div class="project-image project-image-finance">
+                    <span class="project-tag">Finance</span>
+                    <img src="assets/screenshot-index-tracker.png" alt="Index Constituents Tracker"
+                        class="project-thumb">
+                </div>
+                <div class="project-info">
+                    <div class="meta-badges">
+                        <span class="meta-badge status-active"><span class="status-dot"></span>Tool</span>
+                        <span class="meta-badge">Active</span>
+                    </div>
+                    <h3 class="project-title">インデックス構成銘柄図鑑</h3>
+                    <p class="project-desc">投資信託の中身を視覚的に学べる金融教育ツール</p>
+                </div>
+            </a>
+            <!-- Project 5: Energy - Grid Connection Dashboard -->
+            <a href="projects/grid-connection.html" class="project-card" data-category="energy">
+                <div class="project-image project-image-energy">
+                    <span class="project-tag">Energy</span>
+                    <img src="assets/screenshot-grid-connection.png" alt="Grid Connection Dashboard"
+                        class="project-thumb">
+                </div>
+                <div class="project-info">
+                    <div class="meta-badges">
+                        <span class="meta-badge status-active"><span class="status-dot"></span>Visual</span>
+                        <span class="meta-badge">Active</span>
+                    </div>
+                    <h3 class="project-title">系統接続ダッシュボード</h3>
+                    <p class="project-desc">蓄電池・再エネの接続申込状況を10電力エリアで可視化</p>
+                </div>
+            </a>
+            <!-- Project 7: Finance - Fear & Greed Index JP -->
+            <a href="projects/fear-greed.html" class="project-card" data-category="finance">
+                <div class="project-image project-image-finance">
+                    <span class="project-tag">Finance</span>
+                    <img src="assets/screenshot-fear-greed.png" alt="Fear & Greed Index JP"
+                        class="project-thumb">
+                </div>
+                <div class="project-info">
+                    <div class="meta-badges">
+                        <span class="meta-badge status-active"><span class="status-dot"></span>Tool</span>
+                        <span class="meta-badge">Active</span>
+                    </div>
+                    <h3 class="project-title">Fear & Greed Index JP</h3>
+                    <p class="project-desc">日本市場の投資家心理を7指標で数値化</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <h2 class="footer-title">Let's connect.</h2>
+            <p class="footer-subtitle">データで世界を可視化するプロジェクトに興味はありませんか？</p>
+            <a href="mailto:enepen789@gmail.com" class="cta-button">
+                Contact us
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://note.com/enepen" target="_blank" rel="noopener noreferrer" class="social-link">Note</a>
+                <a href="https://www.youtube.com/@ENEPENChan" target="_blank" rel="noopener noreferrer"
+                    class="social-link">YouTube</a>
+            </div>
+            <button class="back-to-top" id="backToTop">
+                Back to top
+                <svg class="arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 19V5M5 12l7-7 7 7" />
+                </svg>
+            </button>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

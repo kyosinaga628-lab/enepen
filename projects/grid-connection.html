@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Connection Dashboard - enepen</title>
+    <meta name="description" content="日本の系統接続検討状況ダッシュボード。系統用蓄電池・再生可能エネルギーの接続申込状況を10電力エリアごとに可視化。">
+    <meta property="og:title" content="Grid Connection Dashboard - enepen">
+    <meta property="og:description" content="日本の系統用蓄電池・再エネの接続申込状況を10電力エリアごとに可視化したインタラクティブ・ダッシュボード">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">← Back to Projects</a>
+            </div>
+            <div class="nav-right">
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <a href="../index.html" class="logo">enepen.</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <div class="meta-badges">
+                <span class="meta-badge status-active"><span class="status-dot"></span>Visual</span>
+                <span class="meta-badge">Active</span>
+                <span class="project-category-tag">Energy</span>
+            </div>
+            <h1 class="project-main-title">Grid Connection Dashboard</h1>
+            <p class="project-main-desc">
+                日本の系統用蓄電池・再エネの接続申込状況を可視化。<br>
+                10電力エリアごとに、検討・契約・運転開始の現状を地図上で一望。
+            </p>
+            <a href="https://grid-connection-dashboard.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="demo-button">
+                ダッシュボードを見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="project-visual">
+        <div class="project-mockup">
+            <img src="../assets/screenshot-grid-connection.png" alt="Grid Connection Dashboard" class="detail-thumb">
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="details-grid">
+            <div class="details-section">
+                <h2 class="details-title">概要</h2>
+                <p class="details-text">
+                    日本の電力系統における「系統用蓄電池」「再生可能エネルギー（太陽光・風力）」の接続申込状況を
+                    10電力エリアごとに可視化したインタラクティブ・ダッシュボードです。
+                    再エネ導入拡大に伴う出力制御の増加と、調整力としての系統用蓄電池への期待を背景に、
+                    全国での接続申込の急増を直感的に理解するために開発されました。
+                </p>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">主な機能</h2>
+                <ul class="feature-list">
+                    <li>エリア別ステータス可視化: 地図上で接続検討・契約・運転開始状況を円グラフと規模で表示</li>
+                    <li>詳細データ表示: 再エネ導入率、出力制御率、蓄電池申込容量をホバー/タップで確認</li>
+                    <li>時系列推移: 過去1年間の接続検討申込の急増傾向をグラフ化</li>
+                    <li>レスポンシブデザイン: PC・スマートフォンでの快適な閲覧に対応</li>
+                </ul>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">データ出典</h2>
+                <div class="tech-tags">
+                    <span class="tech-tag">経済産業省</span>
+                    <span class="tech-tag">OCCTO</span>
+                    <span class="tech-tag">ISEP</span>
+                </div>
+                <p class="details-text" style="margin-top: 1rem; font-size: 0.9em;">
+                    経済産業省（再エネ大量導入・次世代電力ネットワーク小委員会）、電力広域的運営推進機関（OCCTO）、
+                    ISEP（自然エネルギー・データ集）の2024年12月末時点データを使用しています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <h2 class="cta-title">系統接続の現状を可視化する</h2>
+        <div class="cta-buttons">
+            <a href="https://grid-connection-dashboard.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="demo-button large">
+                ダッシュボードを見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer project-footer">
+        <div class="footer-content">
+            <a href="../index.html" class="back-link">← 他のプロジェクトを見る</a>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://note.com/enepen" target="_blank" rel="noopener noreferrer" class="social-link">Note</a>
+                <a href="https://www.youtube.com/@ENEPENChan" target="_blank" rel="noopener noreferrer"
+                    class="social-link">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

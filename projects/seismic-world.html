@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEISMIC WORLD - enepen</title>
+    <meta name="description" content="世界の地震データを可視化するWebアプリケーション。マグニチュード4.5以上の地震を時系列でアニメーション表示。">
+    <meta property="og:title" content="SEISMIC WORLD - enepen">
+    <meta property="og:description" content="世界の地震データを可視化するWebアプリケーション。マグニチュード4.5以上の地震を時系列でアニメーション表示。">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">← Back to Projects</a>
+            </div>
+            <div class="nav-right">
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <a href="../index.html" class="logo">enepen.</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <div class="meta-badges">
+                <span class="meta-badge status-active"><span class="status-dot"></span>Visual</span>
+                <span class="meta-badge">Active</span>
+                <span class="project-category-tag">Viz</span>
+            </div>
+            <h1 class="project-main-title">SEISMIC WORLD</h1>
+            <p class="project-main-desc">
+                地球の脈動を可視化する。<br>
+                世界の地震データを、光と音のアニメーションで表現。
+            </p>
+            <a href="https://prime-plasma-world-1yze.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="demo-button">
+                世界地図を見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="project-visual">
+        <div class="project-mockup">
+            <img src="../assets/screenshot-seismic-world.png" alt="SEISMIC WORLD Visualization" class="detail-thumb">
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="details-grid">
+            <div class="details-section">
+                <h2 class="details-title">概要</h2>
+                <p class="details-text">
+                    「SEISMIC WORLD (Global Earthquake Visualization)」は、世界の地震データを可視化するWebアプリケーションです。
+                    Leaflet.jsとCartoDB Dark Matterタイルを使用したダークモードの世界地図上に、
+                    地震の発生を時系列でアニメーション表示します。
+                    円の大きさや色、そしてWeb Audio APIによる音響効果で、地震の規模（マグニチュード）を直感的に感じることができます。
+                </p>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">主な機能</h2>
+                <ul class="feature-list">
+                    <li>地図表示: 視認性の高いダークテーマの世界地図</li>
+                    <li>地震の表現: マグニチュードに応じた円の大きさと色分け（シアン: M4.5+、黄色: M5.0+、赤色: M6.0+）</li>
+                    <li>音声フィードバック: 規模に応じた音の高さと大きさで発生を通知</li>
+                    <li>コントロール: 再生速度変更（0.1x〜5.0x）、タイムラインシーク</li>
+                    <li>データアーカイブ: 直近1ヶ月、1年、および2011年からの過去データを切り替え可能</li>
+                </ul>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">技術スタック & データ</h2>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML5/CSS3</span>
+                    <span class="tech-tag">Vanilla JS</span>
+                    <span class="tech-tag">Leaflet.js</span>
+                    <span class="tech-tag">Web Audio API</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+                <p class="details-text" style="margin-top: 1rem; font-size: 0.9em;">
+                    データソース: USGS（アメリカ地質調査所）API。マグニチュード4.5以上の地震データを取得・可視化しています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <h2 class="cta-title">地球規模の地震活動を体験する</h2>
+        <div class="cta-buttons">
+            <a href="https://prime-plasma-world-1yze.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="demo-button large">
+                世界地図を見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer project-footer">
+        <div class="footer-content">
+            <a href="../index.html" class="back-link">← 他のプロジェクトを見る</a>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://note.com/enepen" target="_blank" rel="noopener noreferrer" class="social-link">Note</a>
+                <a href="https://www.youtube.com/@ENEPENChan" target="_blank" rel="noopener noreferrer"
+                    class="social-link">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

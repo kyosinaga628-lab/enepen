@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>インデックス構成銘柄図鑑 - enepen</title>
+    <meta name="description" content="投資信託の中身を視覚的に学べる金融教育ツール。高校生でも理解できるビジュアル重視の設計。">
+    <meta property="og:title" content="インデックス構成銘柄図鑑 - enepen">
+    <meta property="og:description" content="投資信託の中身を視覚的に学べる金融教育ツール">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">← Back to Projects</a>
+            </div>
+            <div class="nav-right">
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <a href="../index.html" class="logo">enepen.</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <div class="meta-badges">
+                <span class="meta-badge status-active"><span class="status-dot"></span>Tool</span>
+                <span class="meta-badge">Active</span>
+                <span class="project-category-tag">Finance</span>
+            </div>
+            <h1 class="project-main-title">インデックス構成銘柄図鑑</h1>
+            <p class="project-main-desc">
+                あなたの投資先、ちゃんと知ってる？<br>
+                投資信託の中身を視覚的に学べる金融教育ツールです。
+            </p>
+            <a href="https://index-constituents-tracker.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="demo-button">
+                ツールを開く
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="project-visual">
+        <div class="project-mockup">
+            <img src="../assets/screenshot-index-tracker.png" alt="Index Constituents Tracker" class="detail-thumb">
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="details-grid">
+            <div class="details-section">
+                <h2 class="details-title">🎯 コンセプト</h2>
+                <p class="details-text">
+                    「投資信託を買っているけど、実際どんな会社に投資されているの？」という疑問を解決するWebサイトです。
+                    高校生でも理解できるよう、ビジュアル重視で設計されています。
+                </p>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">📊 対応指数</h2>
+                <ul class="feature-list">
+                    <li>🌍 世界: MSCI ACWI（全世界約3,000銘柄）</li>
+                    <li>🇺🇸 米国: S&P 500、NASDAQ 100</li>
+                    <li>🇯🇵 日本: 日経平均、TOPIX、JPX Prime 150</li>
+                </ul>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">主な機能</h2>
+                <ul class="feature-list">
+                    <li>セクター（業種）の割合円グラフ</li>
+                    <li>株価推移チャート</li>
+                    <li>「1万円投資したら？」シミュレーション</li>
+                    <li>銘柄入れ替えのタイムライン（歴史）</li>
+                    <li>地域・国別構成の可視化</li>
+                </ul>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">技術スタック</h2>
+                <div class="tech-tags">
+                    <span class="tech-tag">Vanilla JS</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">JSON Data</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <h2 class="cta-title">投資信託の中身を調べてみよう</h2>
+        <div class="cta-buttons">
+            <a href="https://index-constituents-tracker.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="demo-button large">
+                ツールを開く
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer project-footer">
+        <div class="footer-content">
+            <a href="../index.html" class="back-link">← 他のプロジェクトを見る</a>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://note.com/enepen" target="_blank" rel="noopener noreferrer" class="social-link">Note</a>
+                <a href="https://www.youtube.com/@ENEPENChan" target="_blank" rel="noopener noreferrer"
+                    class="social-link">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

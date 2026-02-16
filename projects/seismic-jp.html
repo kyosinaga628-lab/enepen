@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seismic JP - enepen</title>
+    <meta name="description" content="日本周辺の地震活動を動的に可視化するインタラクティブなデータビジュアライゼーション。">
+    <meta property="og:title" content="Seismic JP - enepen">
+    <meta property="og:description" content="日本周辺の地震活動を動的に可視化するインタラクティブなデータビジュアライゼーション">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">← Back to Projects</a>
+            </div>
+            <div class="nav-right">
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <a href="../index.html" class="logo">enepen.</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <div class="meta-badges">
+                <span class="meta-badge status-beta"><span class="status-dot"></span>Visualization</span>
+                <span class="meta-badge">Beta</span>
+                <span class="project-category-tag">Viz</span>
+            </div>
+            <h1 class="project-main-title">Seismic JP</h1>
+            <p class="project-main-desc">
+                大地の鼓動を、光と音で感じる。<br>
+                2011年から現在までの地震データを、時系列アニメーションで可視化。
+            </p>
+            <a href="https://prime-plasma.vercel.app/" target="_blank" rel="noopener noreferrer" class="demo-button">
+                可視化デモを見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="project-visual">
+        <div class="project-mockup">
+            <img src="../assets/screenshot-seismic-jp.png" alt="Seismic Activity Visualization" class="detail-thumb">
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="details-grid">
+            <div class="details-section">
+                <h2 class="details-title">概要</h2>
+                <p class="details-text">
+                    日本列島周辺で発生した地震を、CartoDBのダークマップ上に動的にプロットするデータビジュアライゼーション作品です。
+                    マグニチュードの大きさを円のサイズと色で表現し、発生に合わせて音声を生成することで、
+                    視覚と聴覚の両方で地震活動の頻度と規模を体感できます。
+                </p>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">主な機能</h2>
+                <ul class="feature-list">
+                    <li>インタラクティブな光のマップ</li>
+                    <li>時系列タイムラプス再生（2011-2025）</li>
+                    <li>マグニチュード連動オーディオフィードバック</li>
+                    <li>GitHub Actionsによるデータ自動更新</li>
+                    <li>USGS Earthquake API連携</li>
+                </ul>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">技術スタック</h2>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python (Data Fetching)</span>
+                    <span class="tech-tag">Leaflet.js</span>
+                    <span class="tech-tag">Web Audio API</span>
+                    <span class="tech-tag">GitHub Actions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <h2 class="cta-title">データを体験する</h2>
+        <div class="cta-buttons">
+            <a href="https://prime-plasma.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="demo-button large">
+                可視化デモを見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+        </div>
+    </section>
+
+    <footer class="footer project-footer">
+        <div class="footer-content">
+            <a href="../index.html" class="back-link">← 他のプロジェクトを見る</a>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://note.com/enepen" target="_blank" rel="noopener noreferrer" class="social-link">Note</a>
+                <a href="https://www.youtube.com/@ENEPENChan" target="_blank" rel="noopener noreferrer"
+                    class="social-link">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

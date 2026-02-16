@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fear & Greed Index JP - enepen</title>
+    <meta name="description" content="日本市場専用のFear & Greed Index。7つの指標から投資家心理を0〜100のスコアで数値化し、毎日自動更新。">
+    <meta property="og:title" content="Fear & Greed Index JP - enepen">
+    <meta property="og:description" content="日本市場専用のFear & Greed Index。7つの指標から投資家心理を数値化。">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">← Back to Projects</a>
+            </div>
+            <div class="nav-right">
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <a href="../index.html" class="logo">enepen.</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <div class="meta-badges">
+                <span class="meta-badge status-active"><span class="status-dot"></span>Tool</span>
+                <span class="meta-badge">Active</span>
+                <span class="project-category-tag">Finance</span>
+            </div>
+            <h1 class="project-main-title">Fear & Greed Index JP</h1>
+            <p class="project-main-desc">
+                日本市場の温度感を、一目で。<br>
+                日経平均・TOPIXなど日本独自のデータから、投資家心理を0〜100のスコアで毎日数値化します。
+            </p>
+            <a href="https://www.kodomo-nisa.jp/fear-greed" target="_blank" rel="noopener noreferrer"
+                class="demo-button">
+                サイトを見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="project-visual">
+        <div class="project-mockup">
+            <img src="../assets/screenshot-fear-greed.png" alt="Fear & Greed Index JP" class="detail-thumb">
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="details-grid">
+            <div class="details-section">
+                <h2 class="details-title">概要</h2>
+                <p class="details-text">
+                    米国版CNN Fear & Greed Indexの日本市場版。日経平均・TOPIXや日本国債のデータを独自に収集・分析し、
+                    投資家が今「恐怖」を感じているか「貪欲」になっているかを0〜100のスコアで数値化します。
+                    スピードメーター形式のゲージで直感的に相場の温度感を把握できます。
+                </p>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">7つの分析指標</h2>
+                <ul class="feature-list">
+                    <li>市場モメンタム: 日経平均 vs 125日移動平均</li>
+                    <li>株価の強さ: 高値圏銘柄 vs 安値圏銘柄</li>
+                    <li>市場の幅: 騰落レシオ（値上がり数 vs 値下がり数）</li>
+                    <li>プット・コール・レシオ: オプション弱気派の割合</li>
+                    <li>市場ボラティリティ: 日経VI（恐怖指数）の推移</li>
+                    <li>安全資産への需要: 株式 vs 国債リターン比較</li>
+                    <li>社債への需要: 投資家のリスク許容度</li>
+                </ul>
+            </div>
+            <div class="details-section">
+                <h2 class="details-title">技術スタック</h2>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python (データ取得)</span>
+                    <span class="tech-tag">GitHub Actions (毎日自動更新)</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">Static HTML / CSS / JS</span>
+                    <span class="tech-tag">JSON-LD (SEO)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <h2 class="cta-title">今の市場心理をチェック</h2>
+        <div class="cta-buttons">
+            <a href="https://www.kodomo-nisa.jp/fear-greed" target="_blank" rel="noopener noreferrer"
+                class="demo-button large">
+                サイトを見る
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer project-footer">
+        <div class="footer-content">
+            <a href="../index.html" class="back-link">← 他のプロジェクトを見る</a>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://note.com/enepen" target="_blank" rel="noopener noreferrer" class="social-link">Note</a>
+                <a href="https://www.youtube.com/@ENEPENChan" target="_blank" rel="noopener noreferrer"
+                    class="social-link">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
