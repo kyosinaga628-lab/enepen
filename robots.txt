@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enepen.vercel.app/sitemap.xml
