@@ -96,56 +96,6 @@ setInterval(() => {
 }, 3000);
 
 // ===========================
-// Smooth Reveal on Load
-// ===========================
-document.addEventListener('DOMContentLoaded', () => {
-    // Hide Loader
-    const loaderOverlay = document.querySelector('.loader-overlay');
-    setTimeout(() => {
-        if (loaderOverlay) {
-            loaderOverlay.classList.add('hidden');
-        }
-    }, 800);
-
-    // Add initial animation classes
-    const heroTitle = document.querySelector('.hero-title');
-    const heroSubtitle = document.querySelector('.hero-subtitle');
-    const cardStackEl = document.querySelector('.card-stack');
-
-    // Animate hero elements
-    setTimeout(() => {
-        if (heroTitle) {
-            heroTitle.style.opacity = '1';
-            heroTitle.style.transform = 'translateY(0)';
-        }
-    }, 100);
-
-    setTimeout(() => {
-        if (heroSubtitle) {
-            heroSubtitle.style.opacity = '1';
-            heroSubtitle.style.transform = 'translateY(0)';
-        }
-    }, 300);
-
-    setTimeout(() => {
-        if (cardStackEl) {
-            cardStackEl.style.opacity = '1';
-            cardStackEl.style.transform = 'translateY(0)';
-        }
-    }, 500);
-});
-
-// Add initial styles for animation
-document.addEventListener('DOMContentLoaded', () => {
-    const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .card-stack');
-    heroElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-    });
-});
-
-// ===========================
 // Parallax Effect for Glows
 // ===========================
 window.addEventListener('mousemove', (e) => {
